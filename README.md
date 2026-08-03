@@ -11,6 +11,7 @@ Follow these simple steps to set up and run the project locally on your machine.
 ### Prerequisites
 
 Ensure you have the following installed on your machine:
+
 - **Node.js**: `v18.x` or higher
 - **npm**: `v9.x` or higher (or `pnpm` / `yarn` / `bun`)
 - **Git**
@@ -18,20 +19,23 @@ Ensure you have the following installed on your machine:
 ### Installation & Local Setup
 
 1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/itzzSVR-tech/iviewsense.git
-   cd iviewsense
-   ```
+
+    ```bash
+    git clone https://github.com/itzzSVR-tech/iviewsense.git
+    cd iviewsense
+    ```
 
 2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+
+    ```bash
+    npm install
+    ```
 
 3. **Start the local development server:**
-   ```bash
-   npm run dev
-   ```
+
+    ```bash
+    npm run dev
+    ```
 
 4. **Open in Browser:**
    Navigate to [http://localhost:3000](http://localhost:3000) to view the live app.
@@ -40,31 +44,31 @@ Ensure you have the following installed on your machine:
 
 ## 🛠️ Project Scripts
 
-| Command | Action |
-| :--- | :--- |
-| `npm run dev` | Starts Next.js development server with Turbopack |
-| `npm run build` | Builds the production bundle |
-| `npm run start` | Runs the production build locally |
-| `npm run lint` | Runs ESLint code checks |
+| Command         | Action                                           |
+| :-------------- | :----------------------------------------------- |
+| `npm run dev`   | Starts Next.js development server with Turbopack |
+| `npm run build` | Builds the production bundle                     |
+| `npm run start` | Runs the production build locally                |
+| `npm run lint`  | Runs ESLint code checks                          |
 
 ---
 
 ## 🌟 Key Features & Solutions
 
 - **Core Service Offerings**:
-  - **Gauge Calibration Services**: Comprehensive NIST & ISO/IEC 17025 traceable calibration management.
-  - **Smart QC 7 Tools**: Automated quality toolsuite for defect root-cause analysis and Pareto monitoring.
-  - **Optoelectronic Systems**: Custom laser triangulation sensors and optical high-speed component inspection.
-  - **Manufacturing Quality 4.0 (MQ 4.0)**: In-line IoT data acquisition and automated Pass/Fail sorting.
+    - **Gauge Calibration Services**: Comprehensive NIST & ISO/IEC 17025 traceable calibration management.
+    - **Smart QC 7 Tools**: Automated quality toolsuite for defect root-cause analysis and Pareto monitoring.
+    - **Optoelectronic Systems**: Custom laser triangulation sensors and optical high-speed component inspection.
+    - **Manufacturing Quality 4.0 (MQ 4.0)**: In-line IoT data acquisition and automated Pass/Fail sorting.
 
 - **Proprietary Products**:
-  - **Calibmaster**: Enterprise industrial gauge and equipment calibration management system.
-  - **Straight Scan Laser**: High-precision automated laser straightness, runout, and geometric inspection system.
+    - **Calibmaster**: Enterprise industrial gauge and equipment calibration management system.
+    - **Straight Scan Laser**: High-precision automated laser straightness, runout, and geometric inspection system.
 
 - **Interactive User Experience**:
-  - Mega Dropdown navigation for quick service & product exploration.
-  - Interactive Specification Lightbox Modals for product hardware & software deep-dives.
-  - Online Booking & Procurement Consultation modals.
+    - Mega Dropdown navigation for quick service & product exploration.
+    - Interactive Specification Lightbox Modals for product hardware & software deep-dives.
+    - Online Booking & Procurement Consultation modals.
 
 ---
 
