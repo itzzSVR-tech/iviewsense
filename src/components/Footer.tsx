@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -8,10 +7,10 @@ import {
     Building,
     Phone,
     Mail,
-    ShieldCheck,
     ArrowUp,
     ExternalLink,
     ChevronRight,
+    ShieldCheck,
 } from "lucide-react";
 
 interface FooterProps {
@@ -36,7 +35,7 @@ export default function Footer({ onOpenTerms, onOpenBookOnline }: FooterProps) {
                         <div className="flex items-center gap-3">
                             <div className="relative w-10 h-10 overflow-hidden rounded-xl border border-cyan-500/40">
                                 <Image
-                                    src="/images/ivs_logo1.jpg"
+                                    src="/images/ivs_logo1.png"
                                     alt="IVIEWSENSE Logo (ivs logo1.png)"
                                     fill
                                     className="object-cover"
@@ -62,7 +61,7 @@ export default function Footer({ onOpenTerms, onOpenBookOnline }: FooterProps) {
 
                         <div className="pt-2 flex items-center gap-3">
                             <a
-                                href="https://www.linkedin.com/company/iviewsense-private-limited"
+                                href="https://www.linkedin.com/company/iviewsense"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-cyan-400 hover:border-cyan-500/40 transition-all flex items-center gap-2 font-semibold text-xs"
@@ -76,6 +75,14 @@ export default function Footer({ onOpenTerms, onOpenBookOnline }: FooterProps) {
                                 <span>Follow on LinkedIn</span>
                                 <ExternalLink className="w-3 h-3 opacity-60" />
                             </a>
+
+                            <button
+                                onClick={onOpenTerms}
+                                className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-cyan-400 hover:border-cyan-500/40 transition-all flex items-center gap-2 font-semibold text-xs"
+                            >
+                                <ShieldCheck className="w-3.5 h-3.5" />
+                                <span>Terms of Use</span>
+                            </button>
                         </div>
                     </div>
 
@@ -137,24 +144,6 @@ export default function Footer({ onOpenTerms, onOpenBookOnline }: FooterProps) {
                                 >
                                     <ChevronRight className="w-3 h-3 text-cyan-500" />
                                     <span>Book Online</span>
-                                </button>
-                            </li>
-                            <li>
-                                <Link
-                                    href="#papers"
-                                    className="hover:text-cyan-400 transition-colors flex items-center gap-1.5"
-                                >
-                                    <ChevronRight className="w-3 h-3 text-cyan-500" />
-                                    <span>Papers & Whitepapers</span>
-                                </Link>
-                            </li>
-                            <li>
-                                <button
-                                    onClick={onOpenTerms}
-                                    className="hover:text-cyan-400 transition-colors flex items-center gap-1.5 text-left"
-                                >
-                                    <ChevronRight className="w-3 h-3 text-cyan-500" />
-                                    <span>Terms of Use</span>
                                 </button>
                             </li>
                         </ul>

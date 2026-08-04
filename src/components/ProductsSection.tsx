@@ -2,18 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import {
-    Sliders,
-    Crosshair,
-    CheckCircle2,
-    ShieldCheck,
-    ArrowRight,
-    Cpu,
-    Maximize2,
-    X,
-    FileCheck,
-    Zap,
-} from "lucide-react";
+import { CheckCircle2, ArrowRight, Cpu, Maximize2, X, Zap } from "lucide-react";
 
 export interface ProductItem {
     id: string;

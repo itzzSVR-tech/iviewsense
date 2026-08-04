@@ -14,7 +14,6 @@ import {
     ExternalLink,
     Layers,
     Sparkles,
-    Download,
     X,
 } from "lucide-react";
 

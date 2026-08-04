@@ -1,7 +1,6 @@
 "use client";
 
-import React from "react";
-import { ShieldCheck, X, FileText, CheckCircle2 } from "lucide-react";
+import { ShieldCheck, X } from "lucide-react";
 
 interface TermsModalProps {
     isOpen: boolean;

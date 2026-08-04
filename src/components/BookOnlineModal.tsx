@@ -1,17 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
-import {
-    Calendar,
-    Clock,
-    CheckCircle2,
-    X,
-    Send,
-    User,
-    Mail,
-    Phone,
-    Video,
-} from "lucide-react";
+import { useState } from "react";
+import { Calendar, CheckCircle2, X } from "lucide-react";
 
 interface BookOnlineModalProps {
     isOpen: boolean;

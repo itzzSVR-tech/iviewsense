@@ -1,19 +1,13 @@
 "use client";
 
-import React from "react";
-import {
-    Building2,
-    Award,
-    ShieldCheck,
-    CheckCircle,
-    TrendingUp,
-} from "lucide-react";
+import { Award, ShieldCheck, CheckCircle, TrendingUp } from "lucide-react";
 
 export const clientList = [
     {
         name: "Hero Motors Limited",
         sector: "Automotive Powertrain & Gear Manufacturing",
         badge: "Enterprise Automotive",
+        icon: "/images/hero.png",
         description:
             "Deployed automated Quality inspection & distributed Quality control systems across key transmission lines.",
     },
@@ -21,6 +15,7 @@ export const clientList = [
         name: "Hanon",
         sector: "Automotive Climate & Thermal Energy Systems",
         badge: "Global OEM",
+        icon: "/images/hanon.png",
         description:
             "Integrated real-time data logger and manufacturing quality analytics for thermal management components.",
     },
@@ -28,6 +23,7 @@ export const clientList = [
         name: "Fujitec",
         sector: "Elevator & Vertical Transportation Engineering",
         badge: "Precision Machinery",
+        icon: "/images/fujitec.png",
         description:
             "Implemented high-accuracy straightness laser scanning & Calibmaster gauge calibration modules.",
     },
@@ -35,6 +31,7 @@ export const clientList = [
         name: "Rane TRW",
         sector: "Occupant Safety & Steering System Technology",
         badge: "Tier-1 Auto System",
+        icon: "/images/trw.png",
         description:
             "Smart 7QC tools framework integration with automated SPC defect tracking and live reporting.",
     },
@@ -42,6 +39,7 @@ export const clientList = [
         name: "TNPL",
         sector: "Tamil Nadu Newsprint and Papers Limited (Process Industry)",
         badge: "Process & Paper Manufacturing",
+        icon: "/images/tnpl.png",
         description:
             "Enterprise software solutions and Microsoft partnership data intelligence dashboards.",
     },
@@ -88,7 +86,10 @@ export default function ClientsMarquee() {
                                     className="flex items-center gap-3 px-6 py-3.5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-cyan-500/50 hover:bg-slate-800/80 transition-all cursor-pointer group shrink-0"
                                 >
                                     <div className="p-2 rounded-lg bg-cyan-950/80 border border-cyan-500/30 text-cyan-400 group-hover:scale-110 transition-transform">
-                                        <Building2 className="w-5 h-5" />
+                                        <img
+                                            src={client.icon}
+                                            className="w-7 h-7"
+                                        />
                                     </div>
                                     <div>
                                         <div className="text-sm font-bold text-slate-100 group-hover:text-cyan-300 transition-colors whitespace-nowrap">

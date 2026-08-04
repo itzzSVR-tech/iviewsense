@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -16,9 +16,7 @@ import {
     BarChart3,
     Crosshair,
     Sliders,
-    ExternalLink,
     BookOpen,
-    FileText,
     ShieldCheck,
     Calendar,
 } from "lucide-react";
@@ -125,10 +123,7 @@ export default function Navbar({
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between">
                     {/* Logo & Company Name */}
-                    <Link
-                        href="#hero"
-                        className="flex items-center gap-3 group"
-                    >
+                    <Link href="#" className="flex items-center gap-3 group">
                         <div className="relative w-10 h-10 overflow-hidden rounded-xl border border-cyan-500/30 group-hover:border-cyan-400 transition-all shadow-lg shadow-cyan-500/10">
                             <Image
                                 src="/images/ivs_logo1.png"
@@ -314,14 +309,6 @@ export default function Navbar({
                             <span>Book Online</span>
                         </button>
 
-                        <Link
-                            href="#papers"
-                            className="px-3 py-2 text-sm font-medium text-slate-300 hover:text-cyan-400 rounded-lg hover:bg-slate-800/50 transition-all flex items-center gap-1.5"
-                        >
-                            <FileText className="w-3.5 h-3.5" />
-                            <span>Papers</span>
-                        </Link>
-
                         <button
                             onClick={onOpenTerms}
                             className="px-3 py-2 text-sm font-medium text-slate-300 hover:text-cyan-400 rounded-lg hover:bg-slate-800/50 transition-all flex items-center gap-1.5"
@@ -333,23 +320,6 @@ export default function Navbar({
 
                     {/* Social LinkedIn & Action */}
                     <div className="hidden lg:flex items-center gap-3">
-                        <a
-                            href="https://www.linkedin.com/company/iviewsense/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="p-2 text-slate-300 hover:text-cyan-400 hover:bg-slate-800/80 rounded-xl transition-all border border-slate-800 hover:border-cyan-500/30 flex items-center gap-2 text-xs font-semibold"
-                            title="Visit IVIEWSENSE LinkedIn Page"
-                        >
-                            <svg
-                                className="w-4 h-4 fill-[#0a66c2]"
-                                viewBox="0 0 24 24"
-                            >
-                                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
-                            </svg>
-                            <span>LinkedIn</span>
-                            <ExternalLink className="w-3 h-3 opacity-60" />
-                        </a>
-
                         <a
                             href="#contact"
                             className="px-4 py-2 text-xs font-bold rounded-xl bg-linear-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 shadow-lg shadow-cyan-500/20 transition-all hover:scale-105 active:scale-95"
@@ -444,13 +414,6 @@ export default function Navbar({
                             >
                                 Book Online
                             </button>
-                            <Link
-                                href="#papers"
-                                onClick={() => setMobileMenuOpen(false)}
-                                className="block px-3 py-2 rounded-lg text-sm font-medium text-slate-200 hover:bg-slate-800"
-                            >
-                                Papers
-                            </Link>
                             <button
                                 onClick={() => {
                                     setMobileMenuOpen(false);
@@ -463,20 +426,6 @@ export default function Navbar({
                         </div>
 
                         <div className="pt-3 flex items-center justify-between border-t border-slate-800">
-                            <a
-                                href="https://www.linkedin.com/company/iviewsense-private-limited"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400"
-                            >
-                                <svg
-                                    className="w-4 h-4 fill-[#0a66c2]"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
-                                </svg>
-                                <span>LinkedIn</span>
-                            </a>
                             <a
                                 href="#contact"
                                 onClick={() => setMobileMenuOpen(false)}

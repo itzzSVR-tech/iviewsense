@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import {
     Mail,
     Phone,
@@ -8,10 +8,6 @@ import {
     Building,
     Send,
     CheckCircle2,
-    Sparkles,
-    Globe,
-    Clock,
-    ShieldCheck,
 } from "lucide-react";
 
 export default function ContactSection() {

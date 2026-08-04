@@ -1,8 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import {
+    MonitorCog,
     Sparkles,
     Cpu,
     Database,
@@ -41,7 +42,7 @@ export default function Hero() {
                     {/* Left Side: Headline & Quick Tech Stack */}
                     <div className="lg:col-span-7 space-y-6 text-left">
                         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-cyan-400 text-xs font-mono font-semibold uppercase tracking-wider backdrop-blur-md">
-                            <Sparkles className="w-3.5 h-3.5 text-cyan-400 animate-pulse" />
+                            <MonitorCog className="w-3.5 h-3.5 text-cyan-400 animate-pulse" />
                             <span>Next-Gen Quality 4.0 Ecosystem</span>
                         </div>
 
